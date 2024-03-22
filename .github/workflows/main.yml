@@ -20,5 +20,5 @@ jobs:
         pip install -r requirements.txt  # 假设你的依赖在这个文件里
     - name: Run pytest
       run: |
-        cd code/storeapi
+        cd storeapi/tests/routers 
         pytest
