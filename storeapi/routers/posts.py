@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from storeapi.models.post import (
+from ..models.post import (
     Comment,
     CommentIn,
     UserPost,
@@ -16,6 +16,7 @@ comments_table = {}
 @router.get("/")
 async def root():
     return {"message": "Hello World"}
+
 
 def find_post(post_id: int):
     return post_table.get(post_id)
