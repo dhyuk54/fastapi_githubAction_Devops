@@ -1,6 +1,7 @@
 from pydantic import BaseModel
 
 
+
 class UserPostIn(BaseModel):
     body: str
 

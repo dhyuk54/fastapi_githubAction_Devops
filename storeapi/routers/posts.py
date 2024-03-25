@@ -7,6 +7,7 @@ from ..models.post import (
     UserPostWithComments,
 )
 
+
 router = APIRouter()
 
 post_table = {}
